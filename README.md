@@ -138,7 +138,6 @@ public class JieGardenAction : IMaaCustomAction
                     context.Click(detail.HitBox.X + 30, detail.HitBox.Y + 30);
                 }
 
-                Console.WriteLine("这个确定");
                 if (cz == 1 && context.TemplateMatch("确定.png", image, out detail, 0.8, 199, 514, 881, 100) && detail?.HitBox != null)
                 {
                     Thread.Sleep(1200);
@@ -154,7 +153,6 @@ public class JieGardenAction : IMaaCustomAction
                 {
                     context.Click(detail.HitBox.X, detail.HitBox.Y);
                 }
-                Console.WriteLine("111这个确定");
                 if (context.TemplateMatch("确定.png", image, out detail, 0.9, 51, 485, 233, 168) && detail?.HitBox != null)
                 {
                     context.Click(detail.HitBox.X, detail.HitBox.Y);
